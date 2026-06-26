@@ -1,0 +1,241 @@
+🏨 Hotel Management System (One Page Structure)
+📛 Project Name
+
+Hotel Management System
+
+📱 Application Name
+
+HotelApp
+
+🗄 Database
+
+hoteldb
+
+📌 Models (models.py)
+1️⃣ Guest
+
+gid – IntegerField (PK)
+
+gname – CharField
+
+gemail – EmailField
+
+gmob_no – BigIntegerField
+
+gid_proof – CharField
+
+address – TextField
+
+2️⃣ Room
+
+rid – IntegerField (PK)
+
+room_no – IntegerField
+
+room_type – CharField (AC / Non-AC / Deluxe)
+
+price_per_day – IntegerField
+
+is_available – BooleanField
+
+3️⃣ Booking
+
+bid – IntegerField (PK)
+
+gid – ForeignKey (Guest)
+
+rid – ForeignKey (Room)
+
+check_in – DateField
+
+check_out – DateField
+
+total_days – IntegerField
+
+status – CharField (Booked / Checked-in / Checked-out)
+
+4️⃣ Payment
+
+pid – IntegerField (PK)
+
+bid – ForeignKey (Booking)
+
+amount – IntegerField
+
+payment_mode – CharField (Cash / UPI / Card)
+
+paid – BooleanField
+
+payment_date – DateField
+
+📁 Templates (Bootstrap + Icons)
+Guest
+
+
+
+addguest
+
+viewguest
+
+updateguest
+
+deleteguest
+
+guestcrud
+
+showallguest
+
+Room
+
+
+
+addroom
+
+viewroom
+
+updateroom
+
+deleteroom
+
+roomcrud
+
+showallroom
+
+Booking
+
+
+
+addbooking
+
+viewbooking
+
+updatebooking
+
+deletebooking
+
+bookingcrud
+
+showallbooking
+
+Payment
+
+
+
+addpayment
+
+viewpayment
+
+updatepayment
+
+deletepayment
+
+paymentcrud
+
+showallpayment
+
+Common Pages
+
+login
+
+dashboard
+
+roomavailability
+
+⚙️ Views Logic (views.py)
+Guest
+
+registerGuest()
+
+loginGuest()
+
+viewGuest()
+
+updateGuest()
+
+deleteGuest()
+
+showAllGuest()
+
+getGuestCrud()
+
+Room
+
+addRoom()
+
+viewRoom()
+
+updateRoom()
+
+deleteRoom()
+
+showAllRoom()
+
+Booking
+
+addBooking()
+
+viewBooking()
+
+updateBooking()
+
+deleteBooking()
+
+showAllBooking()
+
+Payment
+
+addPayment()
+
+viewPayment()
+
+updatePayment()
+
+deletePayment()
+
+showAllPayment()
+
+🔁 DRF APIs (Postman Support)
+Guest API
+
+GET | POST | PUT | DELETE
+
+/api/guests/
+
+Room API
+
+GET | POST | PUT | DELETE
+
+/api/rooms/
+
+Booking API
+
+GET | POST | PUT | DELETE
+
+/api/bookings/
+
+Payment API
+
+GET | POST | PUT | DELETE
+
+/api/payments/
+
+⭐ HR Impression Boost (Add this line)
+
+✔ Automatic room availability update after checkout
+✔ Booking amount auto-calculation
+✔ Admin dashboard with total revenue & occupancy
+
+जर तू म्हणालास तर पुढे मी:
+
+✅ models.py complete code
+
+✅ views.py logic
+
+✅ REST serializers
+
+✅ Resume-ready project description
+
+✅ GitHub folder structure
+
+सगळं तयार करून देईन 💪
+👉 पुढे code पाहिजे की resume description?
